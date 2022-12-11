@@ -12,7 +12,7 @@ function Cards({ Title, Text, Url }) {
                     <Card.Text>
                         {Text}
                     </Card.Text>
-                    <Button variant="dark">Go somewhere</Button>
+                    <Button variant="dark">Check</Button>
                 </Card.Body>
             </Card>
         </Center>

@@ -40,7 +40,8 @@ export const BannerSubTitle = styled.p`
 `
 
 export const ContenBannerArea = styled.div`
-    margin: 15% 0%;
+    margin: 20px 0%;
+    padding: 20px !important;
     background-color: black;
     color: white;
     width: 100%;
@@ -91,10 +92,19 @@ export const FooterP = styled.p`
     font-weight: 600;
     line-height: 21px;
     letter-spacing: 0em;
-    text-align: center;
-    
+    text-align: center;    
 `
 
 export const Margin10 = styled.div`
     margin: 10px 0px;
+`
+
+export const ColContainer = styled.div`
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+`
+
+export const Column = styled.div`
+    display: table-cell;
 `

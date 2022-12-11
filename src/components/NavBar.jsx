@@ -3,14 +3,27 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../assets/Logo.png'
+import Person from '../assets/Person.png'
+import { ColContainer, Column } from '../styles'
 
 export default function NavBar() {
     return (
         <>
             <Navbar bg="light" expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home"><img src={Logo} style={{height: '45px'}} alt="" /></Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <ColContainer>
+                        <Column>
+                            <Navbar.Brand href="#home"><img src={Person} style={{ height: '45px' }} alt="" /></Navbar.Brand>
+
+                        </Column>
+                        <Column>
+                            <Navbar.Brand href="#home"><img src={Logo} style={{ height: '45px' }} alt="" /></Navbar.Brand>
+
+                        </Column>
+                        <Column>
+                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                        </Column>
+                    </ColContainer>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="#home">Home</Nav.Link>
