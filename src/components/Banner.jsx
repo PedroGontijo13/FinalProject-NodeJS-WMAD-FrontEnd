@@ -13,7 +13,9 @@ export default function Banner() {
                             <BannerSubTitle>You can find it here</BannerSubTitle>
                         </Center>
                         <Center>
-                            <Button variant="dark">Dark</Button>
+                            <a href="/LostPets">
+                                <Button variant="dark">Check</Button>
+                            </a>
                         </Center>
                     </Col>
                     <Col sm='6'>

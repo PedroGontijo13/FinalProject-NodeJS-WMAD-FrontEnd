@@ -63,6 +63,7 @@ export const LostPetsTitle = styled.h5`
     line-height: 21px;
     letter-spacing: 0em;
     text-align: center;
+    color: black;
 `
 
 export const Left = styled.div`
@@ -87,7 +88,8 @@ export const MarginAuto = styled.div`
 `
 
 export const FooterP = styled.p`
-    margin-top: 15px;font-family: Inter;
+    margin-top: 15px;
+    font-family: Inter;
     font-size: 17px;
     font-weight: 600;
     line-height: 21px;
@@ -107,4 +109,19 @@ export const ColContainer = styled.div`
 
 export const Column = styled.div`
     display: table-cell;
+`
+
+export const FormTitle = styled.h2`
+    margin: 20px 0px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+`
+
+export const FlexEnd = styled.div`
+    display: flex;
+    justify-content: flex-end;
 `

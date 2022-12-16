@@ -1,10 +1,12 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { LostPetsTitle, Rigth, Left, Center } from "../styles";
 import Cards from "./Cards";
+import PetImg1 from '../assets/dog1.jpg'
 
-export default function LostPets() {
+export default function LostPets({Card}) {
+
     return (
-        <Container>
+        <Container fluid>
             <Row style={{ margin: '4% 0' }}>
                 <Col sm='6'>
                     <Left>
@@ -15,25 +17,30 @@ export default function LostPets() {
                 </Col>
                 <Col sm='6'>
                     <Rigth>
-                        <Button style={{ float: "right" }} variant="dark">Dark</Button>
+                        <a href="/LostPets">
+                            <Button style={{ float: "right" }} variant="dark">Check</Button>
+                        </a>
                     </Rigth>
                 </Col>
             </Row>
             <Row style={{ margin: '4% 0' }}>
                 <Col style={{ margin: 'auto', color: 'black' }} sm='3'>
-                    <Cards Text='Ho' Title='Hey' Url='Tow'></Cards>
+                    <Cards ImgUrl={PetImg1} Name='Marley' Pedigre='Hey' Color='Black' Reward='$1200' City='Vancouver'></Cards>
                 </Col>
                 <Col style={{ margin: 'auto', color: 'black' }} sm='3'>
-                    <Cards Text='Ho' Title='Hey' Url='Tow'></Cards>
+                    <Cards ImgUrl={PetImg1} Name='Marley' Pedigre='Hey' Color='Black' Reward='$1200' City='Vancouver'></Cards>
                 </Col>
                 <Col style={{ margin: 'auto', color: 'black' }} sm='3'>
-                    <Cards Text='Ho' Title='Hey' Url='Tow'></Cards>
+                    <Cards ImgUrl={PetImg1} Name='Marley' Pedigre='Hey' Color='Black' Reward='$1200' City='Vancouver'></Cards>
                 </Col>
+                {Card}
             </Row>
             <Row style={{ margin: '4% 0' }}>
                 <Col>
                     <Center>
-                        <Button variant="dark">Go somewhere</Button>
+                        <a href="/CreateLostPet">
+                            <Button variant="dark">Create</Button>
+                        </a>
                     </Center>
                 </Col>
             </Row>

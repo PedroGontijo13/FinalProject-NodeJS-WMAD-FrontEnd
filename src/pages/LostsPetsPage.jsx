@@ -4,54 +4,16 @@ import Cards from "../components/Cards";
 import ContentBanner from "../components/ContentBanner";
 import PetsFound from "../components/PetsFound";
 import Footer from '../components/Footer'
+import LostPets from "../components/LostPets";
 
 export default function LostPetsPage() {
     return (
-        <Container fluid style={{ background: '#FFFF', color: 'black', marginTop: '20px' }}>
-            <Row>
-                <Col>
-                    <ColContainer>
-                        <Center>
-                            <LostPetsTitle>
-                                Lost Pets
-                            </LostPetsTitle>
-                        </Center>
-                        <Button variant="dark">Dark</Button>
-                        <Button variant="dark">Dark</Button>
-                    </ColContainer>
-                </Col>
-            </Row>
+        <Container fluid style={{ background: '#FFFF', color: 'black' }}>
             <Row style={{ margin: '4% 0' }}>
-                <Col style={{ margin: 'auto', color: 'black' }} sm='3'>
-                    <Cards Text='Ho' Title='Hey' Url='Tow'></Cards>
-                </Col>
-                <Col style={{ margin: 'auto', color: 'black' }} sm='3'>
-                    <Cards Text='Ho' Title='Hey' Url='Tow'></Cards>
-                </Col>
-                <Col style={{ margin: 'auto', color: 'black' }} sm='3'>
-                    <Cards Text='Ho' Title='Hey' Url='Tow'></Cards>
-                </Col>
-            </Row>
-            <Row style={{ margin: '4% 0' }}>
-                <Col style={{ margin: 'auto', color: 'black' }} sm='3'>
-                    <Cards Text='Ho' Title='Hey' Url='Tow'></Cards>
-                </Col>
-                <Col style={{ margin: 'auto', color: 'black' }} sm='3'>
-                    <Cards Text='Ho' Title='Hey' Url='Tow'></Cards>
-                </Col>
-                <Col style={{ margin: 'auto', color: 'black' }} sm='3'>
-                    <Cards Text='Ho' Title='Hey' Url='Tow'></Cards>
-                </Col>
-            </Row>
-            <Row style={{ marginTop: '5%' }}>
-                <Col>
-                    <Center>
-                        <Button variant="dark">Go somewhere</Button>
-                    </Center>
-                </Col>
+                <LostPets />
             </Row>
             <Row>
-                <Col>
+                <Col style={{ background: '#000', margin: '20px 0px', padding: '0px !important' }}>
                     <ContentBanner></ContentBanner>
                 </Col>
             </Row>

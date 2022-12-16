@@ -17,7 +17,7 @@ export default function MainPage() {
                 </Col>
             </Row>
             <Row>
-                <Col>
+                <Col style={{ background: '#000', margin: '20px 0px', padding: '0px !important' }}>
                     <ContentBanner></ContentBanner>
                 </Col>
             </Row>
