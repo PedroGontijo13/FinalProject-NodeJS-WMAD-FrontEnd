@@ -4,7 +4,6 @@ import { Center, FormTitle, FlexEnd } from "../styles"
 import Cards from "./Cards"
 import LostPets from "./LostPets";
 import PetsFound from "./PetsFound";
-import Footer from "./Footer";
 
 export default function LostPetsFormPage() {
     const [Name, setName] = useState('')
@@ -40,7 +39,7 @@ export default function LostPetsFormPage() {
                 <Row>
                     <Col>
                         <Center>
-                            <FormTitle>Create a Found Pet</FormTitle>
+                            <FormTitle>Create a Lost Pet</FormTitle>
                         </Center>
                     </Col>
                 </Row>
@@ -101,12 +100,12 @@ export default function LostPetsFormPage() {
             <Container fluid>
                 <Row>
                     <Col style={{ padding: '0px' }}>
-                        <PetsFound Card={CardDog} />
+                        <LostPets  Card={CardDog}/>
                     </Col>
                 </Row>
                 <Row>
                     <Col style={{ padding: '0px' }}>
-                        <LostPets />
+                        <PetsFound />
                     </Col>
                 </Row>
             </Container>

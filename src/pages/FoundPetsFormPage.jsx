@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap"
 import PetsFound from "../Components/PetsFound";
 import Footer from "../Components/Footer";
-import FoundPetsForm from "../components/LostPetsForm";
+import FoundPetsForm from "../components/FoundPetsForm";
 
 export default function FoundPetsFormPage() {
     return (
