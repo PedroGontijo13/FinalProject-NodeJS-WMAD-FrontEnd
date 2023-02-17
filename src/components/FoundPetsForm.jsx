@@ -25,7 +25,7 @@ export default function FoundPetsForm() {
     );
     const newPet = { Name, Color, Reward, City };
     axios
-      .post("http://localhost:3001/foundpet", newPet)
+      .post("https://finalproject-abi9.onrender.com/foundpet", newPet)
       .then((response) => {
         console.log("New pet added:", response.data);
       })

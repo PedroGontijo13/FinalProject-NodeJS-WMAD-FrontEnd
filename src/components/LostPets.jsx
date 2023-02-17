@@ -10,7 +10,7 @@ export default function LostPets({ Card }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/lostpet/getPets")
+      .get("https://finalproject-abi9.onrender.com/lostpet/getPets")
       .then((response) => {
         setData(response.data);
         console.log(response.data);

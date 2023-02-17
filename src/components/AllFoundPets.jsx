@@ -9,7 +9,7 @@ export default function AllFoundPets() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/foundpet/getPets")
+      .get("https://finalproject-abi9.onrender.com/foundpet/getPets")
       .then((response) => {
         setData(response.data);
         console.log(response.data);

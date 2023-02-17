@@ -12,7 +12,7 @@ export default function LoginForm() {
     event.preventDefault();
     alert(`The name you entered was: ${UserEmail}, ${UserPassword}`);
     axios
-      .post("http://localhost:3001/user/login", {
+      .post("https://finalproject-abi9.onrender.com/user/login", {
         email: UserEmail,
         password: UserPassword,
       })
