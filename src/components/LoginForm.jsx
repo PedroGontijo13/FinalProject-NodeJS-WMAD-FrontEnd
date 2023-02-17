@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Col, Form, Row, Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { FormTitle, Center, FlexEnd } from "../styles";
+import axios from "axios";
 
 export default function LoginForm() {
   const [UserEmail, setUserEmail] = useState("");
@@ -9,9 +10,18 @@ export default function LoginForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(
-      `The name you entered was: ${UserName},  ${UserEmail}, ${UserPassword}`
-    );
+    alert(`The name you entered was: ${UserEmail}, ${UserPassword}`);
+    axios
+      .post("http://localhost:3001/user/login", {
+        email: UserEmail,
+        password: UserPassword,
+      })
+      .then((response) => {
+        console.log('Logged', response)
+      })
+      .catch((error) => {
+        console.log(error)
+      });
   };
 
   return (
@@ -26,7 +36,11 @@ export default function LoginForm() {
         </Row>
         <Row>
           <Col>
-            <Form onSubmit={handleSubmit} method="POST" style={{ width: "100%" }}>
+            <Form
+              onSubmit={handleSubmit}
+              method="POST"
+              style={{ width: "100%" }}
+            >
               <Form.Group
                 style={{ padding: "10px" }}
                 className="mb-3"

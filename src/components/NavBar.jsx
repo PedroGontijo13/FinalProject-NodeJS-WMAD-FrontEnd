@@ -37,23 +37,19 @@ export default function NavBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.2">
-                  <a href="/FormPage">Create User</a>
+                <NavDropdown.Item href="/FormPage">
+                  Create User
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  <a href="/FormPage">Login</a>
+                <NavDropdown.Item href="/LoginPage">Login</NavDropdown.Item>
+                <NavDropdown.Item href="/FoundPets">
+                  Found Pets
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  <a href="/FoundPets">Found Pets</a>
+                <NavDropdown.Item href="/LostPets">Lost Pets</NavDropdown.Item>
+                <NavDropdown.Item href="/CreateLostPet">
+                  Create Lost Pet
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  <a href="/LostPets">Lost Pets</a>
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  <a href="/CreateLostPet">Create Lost Pet</a>
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  <a href="/CreateFoundPet">Create Found Pet</a>
+                <NavDropdown.Item href="/CreateFoundPet">
+                  Create Found Pet
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
