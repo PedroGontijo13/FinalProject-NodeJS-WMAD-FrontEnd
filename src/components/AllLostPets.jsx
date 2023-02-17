@@ -5,7 +5,7 @@ import PetImg1 from "../assets/dog1.jpg";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-export default function LostPets({ Card }) {
+export default function AllLostPets({ Card }) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -20,29 +20,15 @@ export default function LostPets({ Card }) {
       });
   }, []);
 
-  // Create a new array with the first three elements
-  const firstThreeItems = data.slice(0, 3);
-
   return (
     <Container fluid>
       <Row style={{ margin: "4% 0" }}>
-        <Col sm="6">
-          <Left>
-            <LostPetsTitle>Lost Pets</LostPetsTitle>
-          </Left>
-        </Col>
-        <Col sm="6">
-          <Rigth>
-            <a href="/LostPets">
-              <Button style={{ float: "right" }} variant="dark">
-                Check
-              </Button>
-            </a>
-          </Rigth>
+        <Col sm="12">
+          <h2 style={{textAlign: 'center !important'}}>All lost pets</h2>
         </Col>
       </Row>
       <Row style={{ margin: "4% 0" }}>
-        {firstThreeItems.map((pet) => (
+        {data.map((pet) => (
           <Col key={pet.id} style={{ margin: "auto", color: "black" }} sm="3">
             <Cards
               ImgUrl={PetImg1}
@@ -54,15 +40,6 @@ export default function LostPets({ Card }) {
           </Col>
         ))}
         {Card}
-      </Row>
-      <Row style={{ margin: "4% 0" }}>
-        <Col>
-          <Center>
-            <a href="/CreateLostPet">
-              <Button variant="dark">Create</Button>
-            </a>
-          </Center>
-        </Col>
       </Row>
     </Container>
   );
