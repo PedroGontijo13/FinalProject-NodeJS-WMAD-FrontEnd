@@ -2,6 +2,7 @@ import { Col, Row, Container } from "react-bootstrap";
 import Footer from "../components/Footer";
 import LostPetsForm from "../components/LostPetsForm";
 
+
 export default function LostPetsFormPage() {
     return (
         <Container fluid>
